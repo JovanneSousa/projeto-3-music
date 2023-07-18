@@ -1,0 +1,36 @@
+main{
+    font-family: 'Lugrasimo', cursive;
+}
+header{
+    background-color: #003060;
+}
+.fonte{
+    font-family: 'Caveat', cursive;
+}
+.container h1,
+.container h1:hover{
+    color: #7EC8E3;
+    font-size: 40px;
+}
+header .container button{
+    background-color: #7EC8E3;
+}
+.nav-pills .nav-link{
+    color: #7EC8E3;
+}
+.nav-pills .nav-link.active{
+    background-color: #0E86D4;
+    color: #003060;
+}
+.carousel-item img{
+    max-height: 60vh;
+}
+.carousel-indicators button{
+    background-color: #003060;
+}
+#sobre{
+    background-color: #68bae348;
+}
+.container span{
+    color: #0E86D4  ;
+}
