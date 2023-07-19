@@ -1,4 +1,5 @@
-main{
+main,
+header{
     font-family: 'Lugrasimo', cursive;
 }
 header{
@@ -12,13 +13,18 @@ header{
     color: #7EC8E3;
     font-size: 40px;
 }
+h2{
+    font-size: 40px;
+}
 header .container button{
     background-color: #7EC8E3;
 }
 .nav-pills .nav-link{
     color: #7EC8E3;
 }
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active,
+.btn,
+.btn:hover{
     background-color: #0E86D4;
     color: #003060;
 }
@@ -28,9 +34,26 @@ header .container button{
 .carousel-indicators button{
     background-color: #003060;
 }
-#sobre{
+#sobre,
+#produtos{
     background-color: #68bae348;
 }
-.container span{
+.container span,
+.nav-link.text-colored,
+.text-colored,
+form{
     color: #0E86D4  ;
+}
+.col-md-4 h3{
+    font-size: 25px;
+}
+textarea{
+    resize: none;
+}
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+.social-links li a{
+    text-decoration: none;
 }

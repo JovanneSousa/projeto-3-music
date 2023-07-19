@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg p-4" id="header">
+    <header class="navbar navbar-expand-lg p-4 sticky-top" id="header">
         <div class="container">
             <h1 class="navbar-brand m-0 fw-bold fonte">Loja de música</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -27,19 +27,19 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#eventos">
                             <i class="bi bi-calendar-check"></i>
                             Eventos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#produtos">
                             <i class="bi bi-handbag"></i>
                             Produtos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#fale-conosco">
                             <i class="bi bi-chat-left-text"></i>
                             Fale conosco
                         </a>
@@ -48,7 +48,7 @@
             </nav>
         </div>
     </header>
-    <main data-bs-spy="scroll" data-bs-target="#header">
+    <main data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
         <section id="sobre">
             <div data-bs-ride="carousel" class="carousel slide">
                 <div class="carousel-inner">
@@ -83,13 +83,252 @@
                         <div class="col-md-7">
                             <h2 class="fonte fw-bold">Sobre <span>nós</span></h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo accusantium, magni illo, ab quam impedit laborum repellendus dolore rerum cupiditate, autem aspernatur. Iste praesentium quaerat natus, dolorum perferendis modi possimus!</p>
-                            <h2 class="fonte fw-bold">Nossa <span>Loja</span></h2>
+                            <h3 class="fonte fw-bold">Nossa <span>Loja</span></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quis architecto molestiae maiores reprehenderit eligendi quaerat ab? Corrupti itaque neque iste ut eum veritatis, voluptate atque eos totam, praesentium fuga.</p>
                             <ul>
                                 <li>item 1</li>
                                 <li>item 2</li>
                                 <li>item 3</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" >
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="fonte fw-bold text-center">Agende seu <span>espaço</span></h2>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./img/event/rock.jpg" alt="show de rock">
+                        <h3 class="text-center mt-2">Espaço <span>para shows</span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea fuga quidem atque quae accusamus est necessitatibus nesciunt aliquam facere, magnam cum excepturi itaque, distinctio pariatur autem. Magni, nemo minima!</p>    
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./img/event/casamento.jpg" alt="banda de casamento">
+                        <h3 class="text-center mt-2">Bandas <span>para casamento</span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea fuga quidem atque quae accusamus est necessitatibus nesciunt aliquam facere, magnam cum excepturi itaque, distinctio pariatur autem. Magni, nemo minima!</p>    
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./img/event/bar.jpg"    alt="banda de bar">
+                        <h3 class="text-center mt-2">Bares <span>musicais</span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea fuga quidem atque quae accusamus est necessitatibus nesciunt aliquam facere, magnam cum excepturi itaque, distinctio pariatur autem. Magni, nemo minima!</p>    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="text-center fonte fw-bold">Nossos <span>Produtos</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-prod">
+                            <button data-bs-toggle="tab" data-bs-target="#instrumento-corda" class="fw-bold nav-link text-start text-colored active" type="button">Instrumentos de corda</button>
+                            <button data-bs-toggle="tab" data-bs-target="#instrumento-sopro" class="fw-bold nav-link text-start text-colored" type="button">Instrumentos de sopro</button>
+                            <button data-bs-toggle="tab" data-bs-target="#amplificadores" class="fw-bold nav-link text-start text-colored" type="button">Amplificadores</button>
+                            <button data-bs-toggle="tab" data-bs-target="#pedaleira" class="fw-bold nav-link text-start text-colored" type="button">Pedaleiras</button>
+                            <button data-bs-toggle="tab" data-bs-target="#acessorios" class="fw-bold nav-link text-start text-colored" type="button">Acessórios</button>
+                        </nav>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="instrumento-corda">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/guitarra.jpg" alt="uma guitarra">
+                                        <h5 class="text-colored fw-bold mt-2">Guitarra</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/contrabaixo.jpg" alt="um contrabaixo">
+                                        <h5 class="text-colored fw-bold mt-2">Contra-baixo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/banjo.jpg" alt="um banjo">
+                                        <h5 class="text-colored fw-bold mt-2">Banjo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/guitarra.jpg" alt="uma guitarra">
+                                        <h5 class="text-colored fw-bold mt-2">Guitarra</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/contrabaixo.jpg" alt="um contrabaixo">
+                                        <h5 class="text-colored fw-bold mt-2">Contra-baixo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/banjo.jpg" alt="um banjo">
+                                        <h5 class="text-colored fw-bold mt-2">Banjo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="instrumento-sopro">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/saxofone.jpg" alt="um saxofone">
+                                        <h5 class="text-colored fw-bold mt-2">Saxofone</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/clarinete.jpg" alt="um clarinete">
+                                        <h5 class="text-colored fw-bold mt-2">Clarinete</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/trombone.jpg" alt="um trombone">
+                                        <h5 class="text-colored fw-bold mt-2">Trombone</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="amplificadores">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/amp-born.jpg" alt="um amplificador">
+                                        <h5 class="text-colored fw-bold mt-2">Amplificador Marshall</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/amp-marshall.jpg" alt="um amplificador">
+                                        <h5 class="text-colored fw-bold mt-2">Amplificador Born</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/amp-meteoro.jpg" alt="um amplificador">
+                                        <h5 class="text-colored fw-bold mt-2">Amplificador Meteoro</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pedaleira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira mooer.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Mooer</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira-cuvave.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Cuvave</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira-zoom.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Zoom</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira mooer.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Mooer</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira-cuvave.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Cuvave</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/pedaleira-zoom.jpg" alt="uma pedaleira">
+                                        <h5 class="text-colored fw-bold mt-2">Pedaleira Zoom</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/interface-audio.jpg" alt="uma interface de audio">
+                                        <h5 class="text-colored fw-bold mt-2">Interface de audio</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/cabo-p10.jpg" alt="um cabo p10">
+                                        <h5 class="text-colored fw-bold mt-2">Cabo p-10</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/suporte.jpg" alt="um suporte para instrumentos de corda">
+                                        <h5 class="text-colored fw-bold mt-2">Suporte p/ instrumentos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./img/instrumentos/fone.jpeg" alt="um Fone JBL">
+                                        <h5 class="text-colored fw-bold mt-2">Fone JBL</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="text-center fonte fw-bold">Fale <span>conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="nome">Nome:</label>
+                                <input class="form-control" type="text" name="nome" id="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="email">Email:</label>
+                                <input class="form-control" type="email" name="email" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="tel">Telefone (opcional):</label>
+                                <input class="form-control" type="tel" name="tel" id="tel">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="txt">Sua mensagem:</label>
+                                <textarea class="form-control" name="txt" id="txt"></textarea>
+                            </div>
+                            <button class="btn fw-bold" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mt-5 mt-md-0">
+                        <div class="row">
+                            <h3 class="fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-tittle fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua teste Exemplo N. 145, Bairro bootstrap - Cuiaba - MT</p>
                         </div>
                     </div>
                 </div>
